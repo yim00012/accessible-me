@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: cornsilk;
   margin: 0;
   padding: 0;
 }
@@ -20,6 +20,30 @@ h6 {
   padding: 0 1rem;
 }
 
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-links a:focus{
+  top: 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
@@ -28,7 +52,7 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: .5rem 0;
   padding: 0;
 }
 
@@ -39,9 +63,25 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: black;
   text-decoration: none;
   font-size: 1.25rem;
+  padding: .5em;
+}
+
+.main-nav ul li a:hover {
+  color: cornsilk;
+  background-color: rgb(60, 0, 0);
+}
+
+.owner,
+.address,
+.contact-section {
+  margin: 3rem 0;
+}
+
+.owner ul li {
+  padding: .2em 0;
 }
 
 form input,
@@ -61,11 +101,19 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid rgb(60, 0, 0);
   padding: 1rem;
   text-transform: uppercase;
+  font-size: 1.1em;
+  background-color: rgb(60, 0, 0);
+  color: cornsilk;
 }
 
 .site-footer {
   padding: 2rem 0;
+  text-align: right;
+}
+
+footer a {
+  color: brown;
 }
